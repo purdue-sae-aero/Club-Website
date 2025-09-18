@@ -1,0 +1,15 @@
+{
+  "name": "purdue-sae-aero-website",
+  "version": "1.0.0",
+  "description": "Website for Purdue SAE Aero team",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": ["purdue", "sae", "aero", "website"],
+  "author": "Purdue SAE Aero Team",
+  "license": "MIT"
+}

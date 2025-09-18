@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purdue SAE Aero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Purdue SAE Aero</h1>
+            <p class="tagline">Engineering Excellence in Aerospace</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="sections-grid">
+            <div class="section-card" onclick="toggleSection('past-competition')">
+                <h2>Past Competition</h2>
+                <div class="section-content" id="past-competition">
+                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Past+Competition" alt="Past Competition">
+                    <p>Explore our achievements and performance in previous SAE Aero competitions. See how our team has evolved and improved over the years.</p>
+                </div>
+            </div>
+
+            <div class="section-card" onclick="toggleSection('leadership')">
+                <h2>Leadership</h2>
+                <div class="section-content" id="leadership">
+                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Leadership+Team" alt="Leadership Team">
+                    <p>Meet our dedicated leadership team who guide our organization toward excellence in aerospace engineering and competition success.</p>
+                </div>
+            </div>
+
+            <div class="section-card" onclick="toggleSection('contact')">
+                <h2>Contact Us</h2>
+                <div class="section-content" id="contact">
+                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Contact+Us" alt="Contact Information">
+                    <p>Get in touch with Purdue SAE Aero for collaboration opportunities, membership information, or general inquiries.</p>
+                    <div class="contact-info">
+                        <p>Email: sae-aero@purdue.edu</p>
+                        <p>Location: Purdue University, West Lafayette, IN</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card" onclick="toggleSection('sponsors')">
+                <h2>Sponsors</h2>
+                <div class="section-content" id="sponsors">
+                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Our+Sponsors" alt="Sponsors">
+                    <p>We are grateful for the support of our sponsors who make our aerospace engineering projects and competitions possible.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Purdue SAE Aero. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
