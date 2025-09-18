@@ -7,51 +7,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Purdue SAE Aero</h1>
-            <p class="tagline">Engineering Excellence in Aerospace</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">SAE Aero</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="past-competition.html" class="nav-link">Past Competition</a></li>
+                <li class="nav-item"><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <div class="sections-grid">
-            <div class="section-card" onclick="toggleSection('past-competition')">
-                <h2>Past Competition</h2>
-                <div class="section-content" id="past-competition">
-                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Past+Competition" alt="Past Competition">
-                    <p>Explore our achievements and performance in previous SAE Aero competitions. See how our team has evolved and improved over the years.</p>
-                </div>
-            </div>
-
-            <div class="section-card" onclick="toggleSection('leadership')">
-                <h2>Leadership</h2>
-                <div class="section-content" id="leadership">
-                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Leadership+Team" alt="Leadership Team">
-                    <p>Meet our dedicated leadership team who guide our organization toward excellence in aerospace engineering and competition success.</p>
-                </div>
-            </div>
-
-            <div class="section-card" onclick="toggleSection('contact')">
-                <h2>Contact Us</h2>
-                <div class="section-content" id="contact">
-                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Contact+Us" alt="Contact Information">
-                    <p>Get in touch with Purdue SAE Aero for collaboration opportunities, membership information, or general inquiries.</p>
-                    <div class="contact-info">
-                        <p>Email: sae-aero@purdue.edu</p>
-                        <p>Location: Purdue University, West Lafayette, IN</p>
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="Space Shuttle Hypersonic test.png" alt="Space Shuttle Hypersonic">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Purdue SAE Aero</h1>
+                        <p class="hero-subtitle">Engineering Excellence in Aerospace</p>
+                        <button class="cta-button" onclick="scrollToSections()">Explore Our Work</button>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="section-card" onclick="toggleSection('sponsors')">
-                <h2>Sponsors</h2>
-                <div class="section-content" id="sponsors">
-                    <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Our+Sponsors" alt="Sponsors">
-                    <p>We are grateful for the support of our sponsors who make our aerospace engineering projects and competitions possible.</p>
+        <section class="sections-preview">
+            <div class="container">
+                <h2 class="section-heading">Discover Our Mission</h2>
+                <div class="cards-grid">
+                    <div class="preview-card" onclick="window.location.href='past-competition.html'">
+                        <div class="card-icon">🏆</div>
+                        <h3>Past Competition</h3>
+                        <p>Explore our achievements and performance in SAE competitions</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                    
+                    <div class="preview-card" onclick="window.location.href='leadership.html'">
+                        <div class="card-icon">👥</div>
+                        <h3>Leadership</h3>
+                        <p>Meet our dedicated team leaders and executive board</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                    
+                    <div class="preview-card" onclick="window.location.href='contact.html'">
+                        <div class="card-icon">📧</div>
+                        <h3>Contact Us</h3>
+                        <p>Get in touch for collaboration and membership opportunities</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                    
+                    <div class="preview-card" onclick="window.location.href='sponsors.html'">
+                        <div class="card-icon">🤝</div>
+                        <h3>Sponsors</h3>
+                        <p>Meet our valued partners who support our aerospace projects</p>
+                        <div class="card-arrow">→</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
