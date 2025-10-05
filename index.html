@@ -9,13 +9,15 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">SAE Aero</div>
+            <div class="nav-logo">Purdue SAE Aero</div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="past-competition.html" class="nav-link">Past Competition</a></li>
-                <li class="nav-item"><a href="leadership.html" class="nav-link">Leadership</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
+                <li class="nav-item"><a href="#past-competitions" class="nav-link">Past Competitions</a></li>
+                <li class="nav-item"><a href="#plan" class="nav-link">Our Plan</a></li>
+                <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li class="nav-item"><a href="#leadership" class="nav-link">Leadership</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -26,7 +28,7 @@
     </nav>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero-image">
                 <img src="Space Shuttle Hypersonic test.png" alt="Space Shuttle Hypersonic">
                 <div class="hero-overlay">
@@ -39,36 +41,221 @@
             </div>
         </section>
 
-        <section class="sections-preview">
+        <!-- Mission Section -->
+        <section id="mission" class="content-section">
             <div class="container">
-                <h2 class="section-heading">Discover Our Mission</h2>
-                <div class="cards-grid">
-                    <div class="preview-card" onclick="window.location.href='past-competition.html'">
-                        <div class="card-icon">🏆</div>
-                        <h3>Past Competition</h3>
-                        <p>Explore our achievements and performance in SAE competitions</p>
-                        <div class="card-arrow">→</div>
+                <div class="content-text">
+                    <h2>Our Mission</h2>
+                    <p>Purdue SAE Aero is dedicated to advancing aerospace engineering through innovative design, hands-on experience, and competitive excellence. Our team focuses on developing cutting-edge aircraft solutions that push the boundaries of what's possible in aerospace technology.</p>
+
+                    <p>We participate in the SAE Aero Design competitions, where students design, build, and fly remote-controlled aircraft to compete in various challenges. This provides our members with invaluable real-world engineering experience.</p>
+
+                    <h3>Our Goals</h3>
+                    <ul class="benefits-list">
+                        <li>Design and build competitive aircraft for SAE competitions</li>
+                        <li>Provide hands-on engineering experience to students</li>
+                        <li>Foster collaboration between different engineering disciplines</li>
+                        <li>Promote aerospace education and innovation at Purdue</li>
+                        <li>Develop the next generation of aerospace engineers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Competitions Section -->
+        <section id="past-competitions" class="content-section" style="background: #F5F5F5;">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #005493; margin-bottom: 50px;">Past Competitions</h2>
+                <div class="content-grid">
+                    <div class="content-image">
+                        <img src="https://via.placeholder.com/800x600/FFD700/000000?text=Competition+Aircraft" alt="Competition Aircraft">
                     </div>
-                    
-                    <div class="preview-card" onclick="window.location.href='leadership.html'">
-                        <div class="card-icon">👥</div>
-                        <h3>Leadership</h3>
-                        <p>Meet our dedicated team leaders and executive board</p>
-                        <div class="card-arrow">→</div>
+                    <div class="content-text">
+                        <h3>Competition Achievements</h3>
+                        <p>Purdue SAE Aero has a rich history of participating in the Society of Automotive Engineers' Aero Design competitions. Our team has consistently demonstrated excellence in aircraft design, manufacturing, and flight performance.</p>
+
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <h3>2023 Competition</h3>
+                                <p>Placed 5th overall in the Regular Class with our innovative carbon fiber design</p>
+                            </div>
+                            <div class="achievement-item">
+                                <h3>2022 Competition</h3>
+                                <p>Successfully completed all flight missions with a payload capacity of 15 lbs</p>
+                            </div>
+                            <div class="achievement-item">
+                                <h3>2021 Competition</h3>
+                                <p>Earned recognition for best technical presentation and design report</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="preview-card" onclick="window.location.href='contact.html'">
-                        <div class="card-icon">📧</div>
-                        <h3>Contact Us</h3>
-                        <p>Get in touch for collaboration and membership opportunities</p>
-                        <div class="card-arrow">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Plan Section -->
+        <section id="plan" class="content-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #005493; margin-bottom: 50px;">Our Plan</h2>
+                <div class="content-text">
+                    <h3>Competition Strategy</h3>
+                    <p>Our plan for upcoming SAE Aero Design competitions focuses on innovative design, rigorous testing, and continuous improvement. We're committed to pushing the boundaries of aircraft performance while maintaining reliability and efficiency.</p>
+
+                    <h3>Development Timeline</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <h3>Phase 1: Design & Analysis</h3>
+                            <p>Conduct aerodynamic analysis, structural simulations, and weight optimization studies to create the optimal aircraft design.</p>
+                        </div>
+
+                        <div class="achievement-item">
+                            <h3>Phase 2: Prototype Construction</h3>
+                            <p>Build initial prototypes using advanced manufacturing techniques and lightweight materials to validate our design concepts.</p>
+                        </div>
+
+                        <div class="achievement-item">
+                            <h3>Phase 3: Testing & Refinement</h3>
+                            <p>Perform extensive flight testing, gather performance data, and refine the design based on real-world results.</p>
+                        </div>
+
+                        <div class="achievement-item">
+                            <h3>Phase 4: Competition Preparation</h3>
+                            <p>Final assembly, team training, documentation, and logistics preparation for competition day.</p>
+                        </div>
                     </div>
-                    
-                    <div class="preview-card" onclick="window.location.href='sponsors.html'">
-                        <div class="card-icon">🤝</div>
-                        <h3>Sponsors</h3>
-                        <p>Meet our valued partners who support our aerospace projects</p>
-                        <div class="card-arrow">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="sponsors-intro" style="padding: 80px 0;">
+            <div class="container">
+                <div class="intro-content">
+                    <h2>Our Sponsors</h2>
+                    <p>The success of Purdue SAE Aero is made possible through the generous support of our sponsors. These partnerships enable us to pursue cutting-edge aerospace engineering projects, participate in competitions, and provide invaluable learning experiences for our members.</p>
+                </div>
+
+                <div class="sponsor-tier" style="margin-top: 60px;">
+                    <h3 class="tier-title" style="font-size: 2rem;">Platinum Sponsors</h3>
+                    <div class="sponsors-row">
+                        <div class="sponsor-card large">
+                            <img src="https://via.placeholder.com/400x200/FFD700/000000?text=Platinum+Sponsor+1" alt="Platinum Sponsor">
+                            <div class="sponsor-info">
+                                <h3>Aerospace Corp</h3>
+                                <p>Leading aerospace technology partner</p>
+                            </div>
+                        </div>
+                        <div class="sponsor-card large">
+                            <img src="https://via.placeholder.com/400x200/FFD700/000000?text=Platinum+Sponsor+2" alt="Platinum Sponsor">
+                            <div class="sponsor-info">
+                                <h3>Boeing</h3>
+                                <p>Global aerospace leader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="leadership-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #005493; margin-bottom: 50px;">Leadership Team</h2>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://via.placeholder.com/300x300/FFD700/000000?text=President" alt="President">
+                        </div>
+                        <div class="leader-info">
+                            <h3>John Smith</h3>
+                            <p class="leader-title">President</p>
+                            <p class="leader-major">Aerospace Engineering</p>
+                            <p class="leader-description">Leading the team with vision and innovation</p>
+                        </div>
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://via.placeholder.com/300x300/FFD700/000000?text=VP" alt="Vice President">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="leader-title">Vice President</p>
+                            <p class="leader-major">Mechanical Engineering</p>
+                            <p class="leader-description">Supporting organizational operations</p>
+                        </div>
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://via.placeholder.com/300x300/FFD700/000000?text=Design+Lead" alt="Design Lead">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Michael Chen</h3>
+                            <p class="leader-title">Design Team Lead</p>
+                            <p class="leader-major">Aeronautical Engineering</p>
+                            <p class="leader-description">Aircraft design optimization expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" style="background: #F5F5F5;">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #005493; margin-bottom: 50px;">Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Whether you're interested in joining our team, exploring sponsorship opportunities, or have questions about our projects, we'd love to hear from you!</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>sae-aero@purdue.edu</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Purdue University<br>West Lafayette, IN 47907</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-link">📘 Facebook</a>
+                                <a href="#" class="social-link">📷 Instagram</a>
+                                <a href="#" class="social-link">🐦 Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form class="message-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>

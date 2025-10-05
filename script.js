@@ -252,7 +252,7 @@ modalStyles.textContent = `
 `;
 document.head.appendChild(modalStyles);
 
-// Add parallax effect to hero section
+// Add parallax effect to hero section and active nav highlighting
 window.addEventListener('scroll', () => {
     const heroImage = document.querySelector('.hero-image img');
     if (heroImage) {
@@ -260,6 +260,33 @@ window.addEventListener('scroll', () => {
         const rate = scrolled * -0.5;
         heroImage.style.transform = `translateY(${rate}px)`;
     }
+
+    // Highlight active section in navigation
+    const sections = document.querySelectorAll('section[id], main');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id') || 'home';
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.style.fontWeight = 'normal';
+
+        if (current === 'home' && link.getAttribute('href') === 'index.html') {
+            link.classList.add('active');
+            link.style.fontWeight = 'bold';
+        } else if (link.getAttribute('href').includes('#' + current)) {
+            link.classList.add('active');
+            link.style.fontWeight = 'bold';
+        }
+    });
 });
 
 // Add loading animation
