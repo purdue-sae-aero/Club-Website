@@ -86,6 +86,10 @@ function animateOnScroll() {
 // Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll();
+
+    // Trigger scroll reveal on page load
+    const scrollEvent = new Event('scroll');
+    window.dispatchEvent(scrollEvent);
     
     // Add hover effects to preview cards
     const previewCards = document.querySelectorAll('.preview-card');
@@ -285,6 +289,21 @@ window.addEventListener('scroll', () => {
         } else if (link.getAttribute('href').includes('#' + current)) {
             link.classList.add('active');
             link.style.fontWeight = 'bold';
+        }
+    });
+
+    // Scroll reveal animations (bidirectional)
+    const scrollElements = document.querySelectorAll('.content-section, .leadership-section, .contact-section, .sponsors-intro');
+
+    scrollElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const elementBottom = el.getBoundingClientRect().bottom;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible && elementBottom > elementVisible) {
+            el.classList.add('visible');
+        } else {
+            el.classList.remove('visible');
         }
     });
 });
