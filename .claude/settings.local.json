@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx http-server:*)"
+      "Bash(npx http-server:*)",
+      "Bash(move competition-2023.html competition-2025-us.html)"
     ],
     "deny": [],
     "ask": []
