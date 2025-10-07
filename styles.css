@@ -10,6 +10,7 @@ body {
     color: #000000;
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -33,6 +34,11 @@ body {
     border-radius: 50px;
     border: 2px solid #FFD700;
     box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
 }
 
 .nav-container {
@@ -172,16 +178,20 @@ body {
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.5);
     background: #000000;
     color: #FFD700;
+}
+
+.cta-button:active {
+    transform: translateY(-2px) scale(1.02);
 }
 
 /* Sections Preview */
@@ -346,14 +356,17 @@ body {
     border-radius: 10px;
     border-left: 4px solid #FFD700;
     margin-bottom: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInLeft 0.6s ease forwards;
 }
 
 .achievement-item:hover {
-    background: rgba(255, 215, 0, 0.2);
-    transform: translateX(10px);
+    background: rgba(255, 215, 0, 0.25);
+    transform: translateX(15px) scale(1.02);
     border-left-width: 6px;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
 }
 
 .achievement-item h3 {
@@ -440,11 +453,16 @@ body {
     padding: 30px;
     text-align: center;
     border: 2px solid #FFD700;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .leader-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+    border-color: #FFC700;
 }
 
 .leader-image {
@@ -630,6 +648,7 @@ body {
     border-radius: 8px;
     color: #000000;
     font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
@@ -637,7 +656,8 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: #000000;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
 }
 
 .submit-btn {
@@ -765,12 +785,16 @@ body {
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .sponsor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+    border-color: #FFC700;
 }
 
 .sponsor-card.large {
@@ -1009,4 +1033,90 @@ footer p {
     .contact-section {
         padding: 60px 0;
     }
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Stagger animation delays for cards */
+.leader-card:nth-child(1) { animation-delay: 0.1s; }
+.leader-card:nth-child(2) { animation-delay: 0.2s; }
+.leader-card:nth-child(3) { animation-delay: 0.3s; }
+.leader-card:nth-child(4) { animation-delay: 0.4s; }
+.leader-card:nth-child(5) { animation-delay: 0.5s; }
+.leader-card:nth-child(6) { animation-delay: 0.6s; }
+.leader-card:nth-child(7) { animation-delay: 0.7s; }
+.leader-card:nth-child(8) { animation-delay: 0.8s; }
+.leader-card:nth-child(9) { animation-delay: 0.9s; }
+
+.sponsor-card:nth-child(1) { animation-delay: 0.1s; }
+.sponsor-card:nth-child(2) { animation-delay: 0.2s; }
+.sponsor-card:nth-child(3) { animation-delay: 0.3s; }
+.sponsor-card:nth-child(4) { animation-delay: 0.4s; }
+
+.achievement-item:nth-child(1) { animation-delay: 0.1s; }
+.achievement-item:nth-child(2) { animation-delay: 0.2s; }
+.achievement-item:nth-child(3) { animation-delay: 0.3s; }
+.achievement-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Image hover effects */
+img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Button press effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Smooth section transitions */
+section {
+    transition: all 0.5s ease;
 }
