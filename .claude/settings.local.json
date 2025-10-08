@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npx http-server:*)",
-      "Bash(move competition-2023.html competition-2025-us.html)"
+      "Bash(move competition-2023.html competition-2025-us.html)",
+      "Bash(unzip:*)",
+      "Bash(convert:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "ask": []

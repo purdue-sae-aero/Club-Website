@@ -256,8 +256,56 @@ modalStyles.textContent = `
 `;
 document.head.appendChild(modalStyles);
 
+// Smart navbar hide/show on scroll
+let lastScrollTop = 0;
+let navbarVisible = true;
+
+// Navbar proximity detection
+document.addEventListener('mousemove', (e) => {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const navbarRect = navbar.getBoundingClientRect();
+    const mouseY = e.clientY;
+    const proximityThreshold = 150; // pixels from navbar to trigger expansion
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Only apply proximity detection when navbar is slim (not at top)
+    if (currentScroll > 50) {
+        const distanceFromNavbar = Math.abs(mouseY - navbarRect.top - navbarRect.height / 2);
+
+        if (distanceFromNavbar < proximityThreshold) {
+            navbar.classList.add('navbar-expanded');
+        } else {
+            navbar.classList.remove('navbar-expanded');
+        }
+    } else {
+        navbar.classList.remove('navbar-expanded');
+    }
+});
+
 // Add parallax effect to hero section and active nav highlighting
 window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Navbar hide/show logic
+    if (currentScroll <= 50) {
+        // At the top - show full navbar
+        navbar.classList.remove('navbar-hidden');
+        navbar.classList.remove('navbar-slim');
+        navbar.classList.remove('navbar-expanded');
+        navbarVisible = true;
+    } else {
+        // Not at top - always show slim navbar
+        navbar.classList.add('navbar-slim');
+        navbar.classList.remove('navbar-hidden');
+        navbarVisible = false;
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
     const heroImage = document.querySelector('.hero-image img');
     if (heroImage) {
         const scrolled = window.pageYOffset;
