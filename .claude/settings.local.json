@@ -6,7 +6,8 @@
       "Bash(unzip:*)",
       "Bash(convert:*)",
       "Bash(python:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(gh repo view:*)"
     ],
     "deny": [],
     "ask": []
