@@ -1,0 +1,11 @@
+# Ignore large files and archives
+*.zip
+*.pdf
+
+# Python files
+*.py
+__pycache__/
+
+# Git
+.git/
+.DS_Store
