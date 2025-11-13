@@ -10,15 +10,13 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="PSAEA_logo-thumbnail.png" alt="Purdue SAE Aero Logo" style="height: 50px; margin-right: 10px; vertical-align: middle;">
                 Purdue SAE Aero
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
-                <li class="nav-item"><a href="#past-competitions" class="nav-link">Past Competitions</a></li>
-                <li class="nav-item"><a href="#plan" class="nav-link">Our Plan</a></li>
+                <li class="nav-item"><a href="#competitions" class="nav-link">Competitions</a></li>
                 <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
                 <li class="nav-item"><a href="leadership.html" class="nav-link">Leadership</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
@@ -51,7 +49,7 @@
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
             <div class="container" style="position: relative; z-index: 1;">
                 <div style="text-align: center; margin-bottom: 40px;">
-                    <h2 style="display: inline-block; font-size: 3rem; padding: 20px 60px; border: 3px solid #FFD700; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Our Mission</h2>
+                    <h2 style="display: inline-block; font-size: 3rem; padding: 20px 60px; border: 3px solid #CFB53B; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Our Mission</h2>
                 </div>
                 <div class="content-text" style="background: rgba(255, 255, 255, 0.7); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
                     <p>Purdue SAE Aero is dedicated to advancing aerospace engineering through innovative design, hands-on experience, and competitive excellence. Our team focuses on developing cutting-edge aircraft solutions that push the boundaries of what's possible in aerospace technology.</p>
@@ -70,97 +68,52 @@
             </div>
         </section>
 
-        <!-- Past Competitions Section -->
-        <section id="past-competitions" class="content-section" style="position: relative; overflow: hidden;">
-            <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                <source src="IMG_6988.mov" type="video/quicktime">
-            </video>
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+        <!-- Competitions Section -->
+        <section id="competitions" class="content-section" style="position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('Airport_aerial.jpg'); background-size: cover; background-position: center; z-index: -1;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 0;"></div>
             <div class="container" style="position: relative; z-index: 1;">
-                <div style="text-align: center; margin-bottom: 50px;">
-                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #FFD700; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Past Competitions</h2>
+                <!-- Main Title -->
+                <div style="text-align: center; margin-bottom: 80px;">
+                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #CFB53B; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Competitions</h2>
                 </div>
-                <div class="content-grid">
-                    <div class="content-image">
-                        <img src="IMGP0713.JPG" alt="Competition Aircraft" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-                    </div>
-                    <div class="content-text" style="background: rgba(255, 255, 255, 0.7); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
-                        <h3>Competition Achievements</h3>
-                        <p>Purdue SAE Aero has a rich history of participating in the Society of Automotive Engineers' Aero Design competitions. Our team has consistently demonstrated excellence in aircraft design, manufacturing, and flight performance.</p>
+
+                <!-- Upcoming Competitions Subsection -->
+                <div style="margin-bottom: 100px;">
+                    <div class="content-text" style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Upcoming Competitions</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">We're preparing for the next SAE Aero Design competitions. Stay tuned for updates on our upcoming competition schedules and follow our journey as we continue to push the boundaries of aerospace engineering.</p>
 
                         <div class="achievement-list">
-                            <div class="achievement-item" onclick="window.location.href='competition-2025-us.html'" style="cursor: pointer;">
-                                <h3>2025 US Competition</h3>
-                                <p>Our latest competition showcasing our continued excellence in aerospace engineering</p>
-                            </div>
-                            <div class="achievement-item" onclick="window.location.href='competition-2024-us.html'" style="cursor: pointer;">
-                                <h3>2024 US Competition</h3>
-                                <p>Demonstrated outstanding aircraft design and flight performance</p>
-                            </div>
-                            <div class="achievement-item" onclick="window.location.href='competition-2024-brazil.html'" style="cursor: pointer;">
-                                <h3>2024 Brazil Competition</h3>
-                                <p>Competed internationally, representing Purdue on the global stage</p>
+                            <div class="achievement-item">
+                                <h3>2026 East - Regular Class</h3>
+                                <p>Planning and preparation underway for the next SAE Aero Design East competition in the Regular Class.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Future Competitions Section -->
-        <section id="future-competitions" class="content-section" style="position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('584da60e-5d07-42ad-bc11-fecb99deb456.JPG'); background-size: cover; background-position: center; z-index: -1;"></div>
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
-            <div class="container" style="position: relative; z-index: 1;">
-                <div style="text-align: center; margin-bottom: 50px;">
-                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #FFD700; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Upcoming Competitions</h2>
-                </div>
-                <div class="content-text" style="background: rgba(255, 255, 255, 0.7); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
-                    <h3>What's Next</h3>
-                    <p>We're preparing for the next SAE Aero Design competitions. Stay tuned for updates on our upcoming competition schedules and follow our journey as we continue to push the boundaries of aerospace engineering.</p>
-
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <h3>2026 Competition Season</h3>
-                            <p>Planning and preparation underway for the next SAE Aero Design competition. Competition details to be announced.</p>
-                        </div>
+                <!-- Past Competitions Subsection -->
+                <div class="content-grid" style="gap: 40px;">
+                    <div class="content-image">
+                        <img id="competition-image" src="" alt="Competition Aircraft" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); transition: opacity 0.6s ease, transform 0.6s ease; opacity: 0;">
                     </div>
-                </div>
-            </div>
-        </section>
+                    <div class="content-text" style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Past Competitions</h3>
 
-        <!-- Our Plan Section -->
-        <section id="plan" class="content-section" style="position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('IMG_7522.jpg'); background-size: cover; background-position: center; z-index: -1;"></div>
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
-            <div class="container" style="position: relative; z-index: 1;">
-                <div style="text-align: center; margin-bottom: 50px;">
-                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #FFD700; border-radius: 50px; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px);">Our Plan</h2>
-                </div>
-                <div class="content-text" style="background: rgba(255, 255, 255, 0.7); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
-                    <h3>Competition Strategy</h3>
-                    <p>Our plan for upcoming SAE Aero Design competitions focuses on innovative design, rigorous testing, and continuous improvement. We're committed to pushing the boundaries of aircraft performance while maintaining reliability and efficiency.</p>
-
-                    <h3>Development Timeline</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <h3>Phase 1: Design & Analysis</h3>
-                            <p>Conduct aerodynamic analysis, structural simulations, and weight optimization studies to create the optimal aircraft design.</p>
-                        </div>
-
-                        <div class="achievement-item">
-                            <h3>Phase 2: Prototype Construction</h3>
-                            <p>Build initial prototypes using advanced manufacturing techniques and lightweight materials to validate our design concepts.</p>
-                        </div>
-
-                        <div class="achievement-item">
-                            <h3>Phase 3: Testing & Refinement</h3>
-                            <p>Perform extensive flight testing, gather performance data, and refine the design based on real-world results.</p>
-                        </div>
-
-                        <div class="achievement-item">
-                            <h3>Phase 4: Competition Preparation</h3>
-                            <p>Final assembly, team training, documentation, and logistics preparation for competition day.</p>
+                        <div class="achievement-list">
+                            <div class="achievement-item" data-team-image="IMG_6959.jpg" onclick="window.location.href='competition-2024-us.html'" style="cursor: pointer;">
+                                <h3>2024 East - Micro Class</h3>
+                                <p>Competed in Florida in the Micro Class division</p>
+                            </div>
+                            <div class="achievement-item" data-team-image="IMG_7522.jpg" onclick="window.location.href='competition-2024-brazil.html'" style="cursor: pointer;">
+                                <h3>2024 Brazil - Regular Class</h3>
+                                <p>Competed internationally in the Regular Class, representing Purdue on the global stage</p>
+                            </div>
+                            <div class="achievement-item" data-team-image="584da60e-5d07-42ad-bc11-fecb99deb456.JPG" onclick="window.location.href='competition-2025-us.html'" style="cursor: pointer;">
+                                <h3>2025 East - Regular Class</h3>
+                                <p>Competed in Fort Worth in the Regular Class division</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,7 +124,7 @@
         <section class="quick-links-bar" style="background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); padding: 60px 0;">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="color: #FFD700; font-size: 2rem; margin-bottom: 15px;">Learn More About Our Team</h2>
+                    <h2 style="color: #CFB53B; font-size: 2rem; margin-bottom: 15px;">Learn More About Our Team</h2>
                     <p style="color: #FFFFFF; font-size: 1.1rem;">Discover who supports us and who leads us to success</p>
                 </div>
                 <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
@@ -195,14 +148,14 @@
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
             <div class="container" style="position: relative; z-index: 1;">
                 <div style="text-align: center; margin-bottom: 50px;">
-                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #FFD700; border-radius: 50px; background: #FFFFFF;">Contact Us</h2>
+                    <h2 style="display: inline-block; font-size: 2.5rem; color: #000000; padding: 20px 60px; border: 3px solid #CFB53B; border-radius: 50px; background: #FFFFFF;">Contact Us</h2>
                 </div>
                 <div class="contact-grid">
                     <div class="contact-info" style="background: rgba(255, 255, 255, 0.9); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
                         <h3 style="color: #000000; font-size: 2rem; margin-bottom: 20px;">Get in Touch</h3>
                         <p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">Whether you're interested in joining our team, exploring sponsorship opportunities, or have questions about our projects, we'd love to hear from you!</p>
 
-                        <div class="contact-item" style="background: rgba(255, 215, 0, 0.1); padding: 20px; border-radius: 15px; margin: 25px 0; border-left: 4px solid #FFD700;">
+                        <div class="contact-item" style="background: rgba(207, 181, 59, 0.1); padding: 20px; border-radius: 15px; margin: 25px 0; border-left: 4px solid #CFB53B;">
                             <div class="contact-icon">📧</div>
                             <div class="contact-details">
                                 <h3 style="color: #000000;">Email</h3>
@@ -210,7 +163,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-item" style="background: rgba(255, 215, 0, 0.1); padding: 20px; border-radius: 15px; margin: 25px 0; border-left: 4px solid #FFD700;">
+                        <div class="contact-item" style="background: rgba(207, 181, 59, 0.1); padding: 20px; border-radius: 15px; margin: 25px 0; border-left: 4px solid #CFB53B;">
                             <div class="contact-icon">📍</div>
                             <div class="contact-details">
                                 <h3 style="color: #000000;">Location</h3>
@@ -221,8 +174,8 @@
                         <div class="social-links" style="margin-top: 30px;">
                             <h3 style="color: #000000; font-size: 1.5rem; margin-bottom: 15px;">Follow Us</h3>
                             <div class="social-icons">
-                                <a href="https://www.instagram.com/purduesaeaero/" target="_blank" class="social-link" style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; margin: 5px; font-weight: 600; transition: transform 0.3s;">📷 Instagram</a>
-                                <a href="https://www.linkedin.com/company/purdue-sae-aero-design/" target="_blank" class="social-link" style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; margin: 5px; font-weight: 600; transition: transform 0.3s;">💼 LinkedIn</a>
+                                <a href="https://www.instagram.com/purduesaeaero/" target="_blank" class="social-link" style="background: linear-gradient(135deg, #CFB53B, #FFA500); color: #000000; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; margin: 5px; font-weight: 600; transition: transform 0.3s;">📷 Instagram</a>
+                                <a href="https://www.linkedin.com/company/purdue-sae-aero-design/" target="_blank" class="social-link" style="background: linear-gradient(135deg, #CFB53B, #FFA500); color: #000000; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; margin: 5px; font-weight: 600; transition: transform 0.3s;">💼 LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -232,20 +185,20 @@
                         <form class="message-form">
                             <div class="form-group">
                                 <label for="name" style="color: #000000; font-weight: 600; font-size: 1.1rem;">Name</label>
-                                <input type="text" id="name" name="name" required style="width: 100%; padding: 15px; border: 2px solid #FFD700; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);">
+                                <input type="text" id="name" name="name" required style="width: 100%; padding: 15px; border: 2px solid #CFB53B; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);">
                             </div>
 
                             <div class="form-group">
                                 <label for="email" style="color: #000000; font-weight: 600; font-size: 1.1rem;">Email</label>
-                                <input type="email" id="email" name="email" required style="width: 100%; padding: 15px; border: 2px solid #FFD700; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);">
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 15px; border: 2px solid #CFB53B; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);">
                             </div>
 
                             <div class="form-group">
                                 <label for="message" style="color: #000000; font-weight: 600; font-size: 1.1rem;">Message</label>
-                                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 15px; border: 2px solid #FFD700; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; resize: vertical; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);"></textarea>
+                                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 15px; border: 2px solid #CFB53B; border-radius: 10px; font-size: 1rem; margin-top: 8px; transition: border-color 0.3s; resize: vertical; background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(5px);"></textarea>
                             </div>
 
-                            <button type="submit" class="submit-btn" style="width: 100%; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000000; padding: 18px; border: none; border-radius: 30px; font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);">Send Message</button>
+                            <button type="submit" class="submit-btn" style="width: 100%; background: linear-gradient(135deg, #CFB53B, #FFA500); color: #000000; padding: 18px; border: none; border-radius: 30px; font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 20px rgba(207, 181, 59, 0.4);">Send Message</button>
                         </form>
                     </div>
                 </div>

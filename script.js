@@ -313,32 +313,44 @@ window.addEventListener('scroll', () => {
         heroImage.style.transform = `translateY(${rate}px)`;
     }
 
-    // Highlight active section in navigation
-    const sections = document.querySelectorAll('section[id], main');
+    // Highlight active section in navigation (only on index page)
+    const pathname = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
 
-    let current = '';
+    // Check if we're on index page (not sponsors, leadership, or competition pages)
+    const isIndexPage = (pathname.endsWith('index.html') ||
+                        pathname === '/' ||
+                        (pathname.endsWith('/') && !pathname.includes('sponsors') && !pathname.includes('leadership') && !pathname.includes('competition')));
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= (sectionTop - 200)) {
-            current = section.getAttribute('id') || 'home';
+    // Only apply scroll-based highlighting on the index page
+    if (isIndexPage) {
+        const sections = document.querySelectorAll('section[id]');
+
+        if (sections.length > 0) {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id') || 'home';
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                link.style.fontWeight = 'normal';
+
+                if (current === 'home' && link.getAttribute('href') === '#home') {
+                    link.classList.add('active');
+                    link.style.fontWeight = 'bold';
+                } else if (link.getAttribute('href').includes('#' + current)) {
+                    link.classList.add('active');
+                    link.style.fontWeight = 'bold';
+                }
+            });
         }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        link.style.fontWeight = 'normal';
-
-        if (current === 'home' && link.getAttribute('href') === 'index.html') {
-            link.classList.add('active');
-            link.style.fontWeight = 'bold';
-        } else if (link.getAttribute('href').includes('#' + current)) {
-            link.classList.add('active');
-            link.style.fontWeight = 'bold';
-        }
-    });
+    }
 
     // Scroll reveal animations (bidirectional)
     const scrollElements = document.querySelectorAll('.content-section, .leadership-section, .contact-section, .sponsors-intro');
@@ -390,3 +402,158 @@ function addPageTransition() {
 
 // Initialize page transitions
 document.addEventListener('DOMContentLoaded', addPageTransition);
+
+// Competition page smooth scroll animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate gallery items on scroll for competition pages
+    const galleryItems = document.querySelectorAll('.competition-gallery-section .gallery-item');
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const galleryObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 150); // Stagger the animations
+            }
+        });
+    }, observerOptions);
+
+    galleryItems.forEach((item) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        galleryObserver.observe(item);
+    });
+
+    // Enhanced parallax effect for competition backgrounds
+    const competitionSections = document.querySelectorAll('.competition-page-section, .competition-gallery-section');
+
+    function updateParallax() {
+        competitionSections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = rect.top;
+            const sectionBottom = rect.bottom;
+            const windowHeight = window.innerHeight;
+
+            // Check if section is in viewport
+            if (sectionBottom > 0 && sectionTop < windowHeight) {
+                const bgImage = section.querySelector('.competition-bg-image, .competition-gallery-bg');
+
+                if (bgImage) {
+                    // Calculate parallax movement
+                    const scrollProgress = (windowHeight - sectionTop) / (windowHeight + sectionHeight);
+                    const translateY = (scrollProgress - 0.5) * 50; // More noticeable parallax
+
+                    bgImage.style.transform = `translateY(${translateY}px) scale(1)`;
+                }
+            }
+        });
+
+        requestAnimationFrame(updateParallax);
+    }
+
+    // Start parallax animation loop
+    requestAnimationFrame(updateParallax);
+});
+
+// Competition image hover effect
+document.addEventListener('DOMContentLoaded', function() {
+    const competitionImage = document.getElementById('competition-image');
+    const competitionItems = document.querySelectorAll('.achievement-item[data-team-image]');
+    const imageContainer = document.querySelector('.content-image');
+    let currentImage = '';
+    let isHovering = false;
+    let fadeTimeout = null;
+
+    if (competitionImage && competitionItems.length > 0) {
+        competitionItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                const teamImage = this.getAttribute('data-team-image');
+                if (teamImage && teamImage !== currentImage) {
+                    isHovering = true;
+                    clearTimeout(fadeTimeout);
+
+                    // If there's already an image, fade it out first
+                    if (currentImage) {
+                        competitionImage.style.opacity = '0';
+                        setTimeout(() => {
+                            if (isHovering) {
+                                competitionImage.src = teamImage;
+                                currentImage = teamImage;
+                                competitionImage.style.opacity = '1';
+                                competitionImage.style.transform = 'scale(1)';
+                            }
+                        }, 300);
+                    } else {
+                        // No image currently, just show it
+                        competitionImage.src = teamImage;
+                        currentImage = teamImage;
+                        setTimeout(() => {
+                            competitionImage.style.opacity = '1';
+                            competitionImage.style.transform = 'scale(1)';
+                        }, 50);
+                    }
+                }
+            });
+
+            item.addEventListener('mouseleave', function(e) {
+                // Check if we're moving to another competition item or the image
+                const relatedTarget = e.relatedTarget;
+                const movingToItem = relatedTarget && relatedTarget.closest('.achievement-item[data-team-image]');
+                const movingToImage = relatedTarget && (relatedTarget === imageContainer || imageContainer.contains(relatedTarget));
+
+                if (!movingToItem && !movingToImage) {
+                    isHovering = false;
+                    fadeTimeout = setTimeout(() => {
+                        if (!isHovering) {
+                            competitionImage.style.opacity = '0';
+                            competitionImage.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                if (!isHovering) {
+                                    competitionImage.src = '';
+                                    currentImage = '';
+                                }
+                            }, 600);
+                        }
+                    }, 100);
+                }
+            });
+        });
+
+        // Keep image visible when hovering over it
+        if (imageContainer) {
+            imageContainer.addEventListener('mouseenter', function() {
+                isHovering = true;
+                clearTimeout(fadeTimeout);
+            });
+
+            imageContainer.addEventListener('mouseleave', function(e) {
+                const relatedTarget = e.relatedTarget;
+                const movingToItem = relatedTarget && relatedTarget.closest('.achievement-item[data-team-image]');
+
+                if (!movingToItem) {
+                    isHovering = false;
+                    fadeTimeout = setTimeout(() => {
+                        if (!isHovering) {
+                            competitionImage.style.opacity = '0';
+                            competitionImage.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                if (!isHovering) {
+                                    competitionImage.src = '';
+                                    currentImage = '';
+                                }
+                            }, 600);
+                        }
+                    }, 100);
+                }
+            });
+        }
+    }
+});
