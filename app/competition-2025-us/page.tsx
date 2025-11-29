@@ -59,6 +59,31 @@ export default function Competition2025US() {
               <p>The 2025 US competition was a testament to our team&apos;s dedication and innovation. Our team demonstrated strong technical skills and collaboration throughout the design, build, and competition phases. The experience provided valuable lessons that will enhance our future competitions.</p>
             </div>
           </div>
+
+          {/* Video Section */}
+          <div className="content-grid" style={{ marginTop: '60px' }}>
+            <div className="content-text competition-text-box">
+              <h2>First Test Flight</h2>
+              <p>The first test flight... the aircraft flew, just not how we expected to. This initial attempt taught us valuable lessons about aircraft stability and control systems that would prove crucial for our competition success.</p>
+              <div style={{ marginTop: '20px', borderRadius: '15px', overflow: 'hidden', border: '3px solid #CFB53B' }}>
+                <video controls style={{ width: '100%', display: 'block' }}>
+                  <source src="/images/other/Dallas_2025test.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <div className="content-text competition-text-box">
+              <h2>Competition Performance</h2>
+              <p>At the competition, the aircraft performed significantly better, demonstrating the improvements made from our testing phase. Key learnings from this experience include giving aeroelasticity a strong consideration in future designs and setting up a better timeline for development and testing phases.</p>
+              <div style={{ marginTop: '20px', borderRadius: '15px', overflow: 'hidden', border: '3px solid #CFB53B' }}>
+                <video controls style={{ width: '100%', display: 'block' }}>
+                  <source src="/images/other/Dallas_2025comp.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

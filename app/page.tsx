@@ -167,13 +167,13 @@ export default function Home() {
               />
             </div>
             <div className="content-text" style={{ background: 'rgba(255, 255, 255, 0.8)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)' }}>
-              <h3 style={{ fontSize: '1.8rem', marginBottom: '20px' }}>Past Competitions</h3>
+              <h3 style={{ fontSize: '1.8rem', marginBottom: '20px' }}>Recent Competitions</h3>
 
               <div className="achievement-list">
-                <Link href="/competition-2024-us">
-                  <div className="achievement-item" data-team-image="IMG_6959.jpg" style={{ cursor: 'pointer' }}>
-                    <h3>2024 East - Micro Class</h3>
-                    <p>Competed in Florida in the Micro Class division</p>
+                <Link href="/competition-2025-us">
+                  <div className="achievement-item" data-team-image="584da60e-5d07-42ad-bc11-fecb99deb456.JPG" style={{ cursor: 'pointer' }}>
+                    <h3>2025 East - Regular Class</h3>
+                    <p>Competed in Fort Worth in the Regular Class division</p>
                   </div>
                 </Link>
                 <Link href="/competition-2024-brazil">
@@ -182,11 +182,14 @@ export default function Home() {
                     <p>Competed internationally in the Regular Class, representing Purdue on the global stage</p>
                   </div>
                 </Link>
-                <Link href="/competition-2025-us">
-                  <div className="achievement-item" data-team-image="584da60e-5d07-42ad-bc11-fecb99deb456.JPG" style={{ cursor: 'pointer' }}>
-                    <h3>2025 East - Regular Class</h3>
-                    <p>Competed in Fort Worth in the Regular Class division</p>
-                  </div>
+              </div>
+
+              {/* Competition Archive Button */}
+              <div style={{ textAlign: 'center', marginTop: '40px' }}>
+                <Link href="/competition-archive" style={{ textDecoration: 'none' }}>
+                  <button className="cta-button" style={{ background: '#FFFFFF', color: '#000000', border: '2px solid #CFB53B' }}>
+                    View Competition Archive
+                  </button>
                 </Link>
               </div>
             </div>

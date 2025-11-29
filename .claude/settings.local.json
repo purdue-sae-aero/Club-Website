@@ -19,7 +19,13 @@
       "Bash(sudo chown:*)",
       "Bash(npm run dev:*)",
       "Bash(tree:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git count-objects:*)",
+      "Bash(git ls-files:*)",
+      "Bash(while read name size)",
+      "Bash(do echo $size $name)",
+      "Bash(done)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []
