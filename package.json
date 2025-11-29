@@ -1,0 +1,29 @@
+{
+  "name": "purdue-sae-aero-website",
+  "version": "1.0.0",
+  "description": "Website for Purdue SAE Aero team",
+  "main": "index.html",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "purdue",
+    "sae",
+    "aero",
+    "website"
+  ],
+  "author": "Purdue SAE Aero Team",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "next": "^16.0.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.9.3"
+  }
+}
