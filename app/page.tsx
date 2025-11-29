@@ -30,8 +30,8 @@ export default function Home() {
     const competitionImageEl = document.getElementById('competition-image');
 
     achievementItems.forEach(item => {
-      item.addEventListener('mouseenter', function() {
-        const imageSrc = this.getAttribute('data-team-image');
+      item.addEventListener('mouseenter', () => {
+        const imageSrc = item.getAttribute('data-team-image');
         if (competitionImageEl && imageSrc) {
           competitionImageEl.style.opacity = '0';
           setTimeout(() => {
@@ -42,7 +42,7 @@ export default function Home() {
         }
       });
 
-      item.addEventListener('mouseleave', function() {
+      item.addEventListener('mouseleave', () => {
         if (competitionImageEl) {
           competitionImageEl.style.transform = 'scale(1)';
         }
