@@ -256,6 +256,21 @@ section {
     box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
 }
 
+.instagram-icon {
+    color: #020202;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.instagram-icon:hover {
+    color: #E4405F;
+    background: rgba(228, 64, 95, 0.1);
+    transform: scale(1.1);
+}
+
 .linkedin-icon {
     color: #020202;
     display: flex;
@@ -1494,6 +1509,10 @@ footer p {
         display: none;
     }
 
+    .instagram-icon {
+        display: none;
+    }
+
     .linkedin-icon {
         display: none;
     }
@@ -1543,7 +1562,14 @@ footer p {
     }
 
     .sponsors-home-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .sponsors-home-content > div:last-child {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .sponsors-home-images {

@@ -175,29 +175,29 @@ export default function Home() {
       </section>
 
       {/* Sponsorship Section */}
-      <section className="sponsors-home-section" style={{ padding: '60px 0' }}>
+      <section className="sponsors-home-section" style={{ padding: '40px 0' }}>
         <div className="container">
-          <div className="sponsors-home-content" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
-            <div className="sponsors-home-text">
-              <h2>Interested In Supporting Us?</h2>
-              <p>Learn more about how you can partner with us in our sponsorship information packet.</p>
-              <div style={{ display: 'flex', gap: '20px', marginTop: '30px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <Link href="/about#sponsors" style={{ textDecoration: 'none' }}>
-                  <button className="cta-button" style={{ background: '#d9aa08', color: '#020202' }}>
-                    Learn More
-                  </button>
-                </Link>
-                <Link href="/about#contact" style={{ textDecoration: 'none' }}>
-                  <button className="cta-button" style={{ background: 'transparent', border: '2px solid #d9aa08', color: '#d9aa08' }}>
-                    Get in Touch
-                  </button>
-                </Link>
-                <Link href="/donate" style={{ textDecoration: 'none' }}>
-                  <button className="cta-button" style={{ background: '#0066cc', color: '#FFFFFF' }}>
-                    Donate
-                  </button>
-                </Link>
-              </div>
+          <div className="sponsors-home-content" style={{ display: 'flex', alignItems: 'center', gap: '40px', width: '100%' }}>
+            <div className="sponsors-home-text" style={{ flex: '1' }}>
+              <h2 style={{ marginBottom: '10px' }}>Interested In Supporting Us?</h2>
+              <p style={{ marginBottom: '0', fontSize: '1.1rem' }}>Learn more about how you can partner with us in our sponsorship information packet.</p>
+            </div>
+            <div style={{ display: 'flex', gap: '15px', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Link href="/about#sponsors" style={{ textDecoration: 'none' }}>
+                <button className="cta-button" style={{ background: '#d9aa08', color: '#020202', padding: '12px 25px', fontSize: '1rem', whiteSpace: 'nowrap' }}>
+                  Learn More
+                </button>
+              </Link>
+              <Link href="/about#contact" style={{ textDecoration: 'none' }}>
+                <button className="cta-button" style={{ background: 'transparent', border: '2px solid #d9aa08', color: '#d9aa08', padding: '12px 25px', fontSize: '1rem', whiteSpace: 'nowrap' }}>
+                  Get in Touch
+                </button>
+              </Link>
+              <Link href="/donate" style={{ textDecoration: 'none' }}>
+                <button className="cta-button" style={{ background: '#0066cc', color: '#FFFFFF', padding: '12px 25px', fontSize: '1rem', whiteSpace: 'nowrap' }}>
+                  Donate
+                </button>
+              </Link>
             </div>
           </div>
         </div>
