@@ -1,48 +1,57 @@
 'use client';
 
-import Image from 'next/image';
+import { useEffect } from 'react';
 
 export default function Competition2024US() {
+  useEffect(() => {
+    // Make content sections visible immediately
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.add('visible'));
+  }, []);
+
   return (
     <main className="page-content">
       <div className="page-header">
         <h1 className="page-title">2024 US Competition - Micro Class</h1>
-        <p className="page-subtitle">Competing in Florida</p>
+        <p className="page-subtitle">Lakeland, Florida</p>
       </div>
 
-      <section className="content-section competition-page-section">
-        <div className="competition-bg-image" style={{ backgroundImage: 'url(/images/backgrounds/Airport_aerial.jpg)' }}></div>
-        <div className="container competition-content-wrapper">
-          <div className="content-grid">
-            <div className="content-image">
-              <div className="competition-image-gallery">
-                <div className="gallery-item">
-                  <Image src="/images/other/IMG_6959.jpg" alt="" width={400} height={300} style={{ width: '100%', height: 'auto' }} />
-                </div>
-              </div>
+      <section className="content-section competition-page-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '80vh' }}>
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: -1
+          }}
+        >
+          <source src="/images/Micro-plane-run.mov" type="video/mp4" />
+        </video>
+        
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.4)', zIndex: 0 }}></div>
+        
+        <div className="container" style={{ position: 'relative', zIndex: 1, paddingTop: '80px', paddingBottom: '80px' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <div className="content-text competition-text-box" style={{ background: 'rgba(255, 255, 255, 0.3)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)', marginBottom: '40px' }}>
+              <h2 style={{ color: '#020202', marginBottom: '20px' }}>Overview</h2>
+              <p style={{ fontSize: '1.2rem', lineHeight: 1.8, color: '#020202' }}>
+                In 2024, Purdue SAE Aero participated in the SAE Aero Design East competition in Lakeland, Florida, competing in the Micro Class division. This competition challenged our team to design and build a compact, efficient aircraft.
+              </p>
             </div>
-            <div className="content-text competition-text-box">
-              <h2>Overview</h2>
-              <p>In 2024, Purdue SAE Aero participated in the SAE Aero Design East competition in Florida, competing in the Micro Class division. This competition challenged our team to design and build a compact, efficient aircraft.</p>
 
-              <h2>Key Highlights</h2>
-              <div className="achievement-list">
-                <div className="achievement-item">
-                  <h3>Micro Class Competition</h3>
-                  <p>Competed in the challenging Micro Class division with strict size and weight constraints.</p>
-                </div>
-                <div className="achievement-item">
-                  <h3>Technical Innovation</h3>
-                  <p>Developed innovative solutions to maximize performance within micro class limitations.</p>
-                </div>
-                <div className="achievement-item">
-                  <h3>Team Collaboration</h3>
-                  <p>Demonstrated exceptional teamwork and engineering problem-solving skills.</p>
-                </div>
-              </div>
-
-              <h2>Team Reflections</h2>
-              <p>The 2024 East competition in the Micro Class provided invaluable experience in designing compact, efficient aircraft. Our team learned important lessons about optimization and constraint-driven design.</p>
+            <div className="content-text competition-text-box" style={{ background: 'rgba(255, 255, 255, 0.3)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)' }}>
+              <h2 style={{ color: '#020202', marginBottom: '20px' }}>Team Reflections</h2>
+              <p style={{ fontSize: '1.2rem', lineHeight: 1.8, color: '#020202' }}>
+                The 2024 East competition in the Micro Class provided invaluable experience in designing compact, efficient aircraft. Our team learned important lessons about optimization and constraint-driven design. Diving in the deep end with our very first competition taught us resilience, innovation, and the true spirit of aerospace engineering.
+              </p>
             </div>
           </div>
         </div>

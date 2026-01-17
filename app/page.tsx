@@ -62,13 +62,6 @@ export default function Home() {
     };
   }, []);
 
-  const scrollToSections = () => {
-    const missionsSection = document.getElementById('mission');
-    if (missionsSection) {
-      missionsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
   return (
     <main>
       <section id="home" className="hero">
@@ -84,7 +77,6 @@ export default function Home() {
             <div className="hero-content">
               <h1 className="hero-title">Purdue SAE Aero</h1>
               <p className="hero-subtitle">Engineering Excellence in Aerospace</p>
-              <button className="cta-button" onClick={scrollToSections}>Explore Our Work</button>
             </div>
           </div>
         </div>
@@ -183,13 +175,13 @@ export default function Home() {
       </section>
 
       {/* Sponsorship Section */}
-      <section className="sponsors-home-section">
+      <section className="sponsors-home-section" style={{ padding: '60px 0' }}>
         <div className="container">
-          <div className="sponsors-home-content">
+          <div className="sponsors-home-content" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
             <div className="sponsors-home-text">
               <h2>Interested In Supporting Us?</h2>
               <p>Learn more about how you can partner with us in our sponsorship information packet.</p>
-              <div style={{ display: 'flex', gap: '20px', marginTop: '30px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '20px', marginTop: '30px', flexWrap: 'wrap', justifyContent: 'center' }}>
                 <Link href="/about#sponsors" style={{ textDecoration: 'none' }}>
                   <button className="cta-button" style={{ background: '#d9aa08', color: '#020202' }}>
                     Learn More
@@ -205,20 +197,6 @@ export default function Home() {
                     Donate
                   </button>
                 </Link>
-              </div>
-            </div>
-            <div className="sponsors-home-images">
-              <div className="sponsor-image-item">
-                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 1</p>
-              </div>
-              <div className="sponsor-image-item">
-                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 2</p>
-              </div>
-              <div className="sponsor-image-item">
-                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 3</p>
-              </div>
-              <div className="sponsor-image-item">
-                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 4</p>
               </div>
             </div>
           </div>

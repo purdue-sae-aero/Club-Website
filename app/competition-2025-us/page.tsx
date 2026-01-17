@@ -1,8 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Competition2025US() {
+  useEffect(() => {
+    // Make content sections visible immediately
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.add('visible'));
+  }, []);
+
   return (
     <main className="page-content">
       <div className="page-header">

@@ -51,7 +51,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>AJ Woods</h3>
                 <p className="leader-title">President</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>William Shorey</h3>
                 <p className="leader-title">Ex-President & Co-Founder</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -84,8 +84,8 @@ export default function About() {
               </div>
               <div className="leader-info">
                 <h3>Matthew Leight</h3>
-                <p className="leader-title">Ex-President & Co-Founder</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-title">Founder & Advisory Guy</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -102,7 +102,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Nicholas Rose</h3>
                 <p className="leader-title">Treasurer & Co-Founder</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -119,7 +119,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Aaryan Lath</h3>
                 <p className="leader-title">Chief Engineer</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Leticia Santos</h3>
                 <p className="leader-title">Systems & Integration Lead</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -153,7 +153,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Almos Quevedo</h3>
                 <p className="leader-title">Aerodynamics Lead</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Max Palmer</h3>
                 <p className="leader-title">Structures Lead</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Mechanical Engineering</p>
               </div>
             </div>
 
@@ -187,7 +187,7 @@ export default function About() {
               <div className="leader-info">
                 <h3>Adam Zhu</h3>
                 <p className="leader-title">Principal Aerodynamics Engineer</p>
-                <p className="leader-major">Aerospace Engineering</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@ export default function About() {
               >
                 Contact Us About Sponsorship
               </a>
-              <a href="/SAE Aero Sponsorship Package.pdf" target="_blank" className="sponsor-info-btn" style={{ display: 'inline-block' }}>
+              <a href="/PSAEA Sponsor Information Packet.pdf" target="_blank" className="sponsor-info-btn" style={{ display: 'inline-block' }}>
                 Download Sponsorship Information Packet
               </a>
             </div>
@@ -316,38 +316,10 @@ export default function About() {
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
             <h2 style={{ display: 'inline-block', fontSize: '2.5rem', color: '#020202', padding: '20px 60px', border: '3px solid #d9aa08', borderRadius: '50px', background: '#FFFFFF' }}>Contact Us</h2>
           </div>
-          <div className="contact-grid">
-            <div className="contact-info" style={{ background: 'rgba(255, 255, 255, 0.9)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(2, 2, 2, 0.3)' }}>
-              <h3 style={{ color: '#020202', fontSize: '2rem', marginBottom: '20px' }}>Get in Touch</h3>
-              <p style={{ color: '#333333', fontSize: '1.1rem', lineHeight: 1.8 }}>Whether you&apos;re interested in joining our team, exploring sponsorship opportunities, or have questions about our projects, we&apos;d love to hear from you!</p>
-
-              <div className="contact-item" style={{ background: 'rgba(217, 170, 8, 0.1)', padding: '20px', borderRadius: '15px', margin: '25px 0', borderLeft: '4px solid #d9aa08' }}>
-                <div className="contact-icon">📧</div>
-                <div className="contact-details">
-                  <h3 style={{ color: '#020202' }}>Email</h3>
-                  <p style={{ color: '#333333' }}>saeaero@purdue.edu</p>
-                </div>
-              </div>
-
-              <div className="contact-item" style={{ background: 'rgba(217, 170, 8, 0.1)', padding: '20px', borderRadius: '15px', margin: '25px 0', borderLeft: '4px solid #d9aa08' }}>
-                <div className="contact-icon">📍</div>
-                <div className="contact-details">
-                  <h3 style={{ color: '#020202' }}>Location</h3>
-                  <p style={{ color: '#333333' }}>Purdue University<br />West Lafayette, IN 47907</p>
-                </div>
-              </div>
-
-              <div className="social-links" style={{ marginTop: '30px' }}>
-                <h3 style={{ color: '#020202', fontSize: '1.5rem', marginBottom: '15px' }}>Follow Us</h3>
-                <div className="social-icons">
-                  <a href="https://www.instagram.com/purduesaeaero/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ background: 'linear-gradient(135deg, #d9aa08, #FFA500)', color: '#020202', padding: '12px 24px', borderRadius: '25px', textDecoration: 'none', display: 'inline-block', margin: '5px', fontWeight: 600, transition: 'transform 0.3s' }}>📷 Instagram</a>
-                  <a href="https://www.linkedin.com/company/purdue-sae-aero-design/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ background: 'linear-gradient(135deg, #d9aa08, #FFA500)', color: '#020202', padding: '12px 24px', borderRadius: '25px', textDecoration: 'none', display: 'inline-block', margin: '5px', fontWeight: 600, transition: 'transform 0.3s' }}>💼 LinkedIn</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="contact-form" style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(2, 2, 2, 0.3)' }}>
-              <h3 style={{ color: '#020202', fontSize: '2rem', marginBottom: '25px' }}>Send us a Message</h3>
+          <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+            <div className="contact-form" style={{ background: 'rgba(255, 255, 255, 0.75)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(2, 2, 2, 0.3)' }}>
+              <h3 style={{ color: '#020202', fontSize: '2rem', marginBottom: '15px' }}>Send us a Message</h3>
+              <p style={{ color: '#333333', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>Whether you&apos;re interested in joining our team, exploring sponsorship opportunities, or have questions about our projects, we&apos;d love to hear from you!</p>
               <form className="message-form" onSubmit={(e) => {
                 e.preventDefault();
                 alert('Form submission functionality coming soon!');
@@ -367,7 +339,7 @@ export default function About() {
                   <textarea id="message" name="message" rows={5} required style={{ width: '100%', padding: '15px', border: '2px solid #d9aa08', borderRadius: '10px', fontSize: '1rem', marginTop: '8px', transition: 'border-color 0.3s', resize: 'vertical', background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(5px)' }}></textarea>
                 </div>
 
-                <button type="submit" className="submit-btn" style={{ width: '100%', background: 'linear-gradient(135deg, #d9aa08, #FFA500)', color: '#020202', padding: '18px', border: 'none', borderRadius: '30px', fontSize: '1.2rem', fontWeight: 700, cursor: 'pointer', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 5px 20px rgba(217, 170, 8, 0.4)' }}>Send Message</button>
+                <button type="submit" className="submit-btn" style={{ width: '100%', background: 'linear-gradient(135deg, #d9aa08, #FFA500)', color: '#020202', padding: '18px', border: 'none', borderRadius: '30px', fontSize: '1.2rem', fontWeight: 700, cursor: 'pointer', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 5px 20px rgba(217, 170, 8, 0.4)' }}>Send message to saeaero@purdue.edu</button>
               </form>
             </div>
           </div>

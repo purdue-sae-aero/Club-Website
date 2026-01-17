@@ -49,7 +49,7 @@ export default function Navbar() {
           
           {/* Competition Dropdown */}
           <div className="nav-dropdown">
-            <span className="nav-link">Competition</span>
+            <Link href="/competition-archive" className="nav-link">Competition</Link>
             <div className="dropdown-content">
               <div className="dropdown-section">
                 <div className="dropdown-header">SAE Brasil</div>
@@ -79,7 +79,7 @@ export default function Navbar() {
         </a>
         <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
           <li className="nav-item"><Link href="/" className="nav-link">Home</Link></li>
-          <li className="nav-item nav-item-header">Competition</li>
+          <li className="nav-item"><Link href="/competition-archive" className="nav-link">Competition</Link></li>
           <li className="nav-item nav-item-subheader">SAE Brasil</li>
           <li className="nav-item nav-item-sub"><Link href="/competition-2024-brazil" className="nav-link">2024</Link></li>
           <li className="nav-item nav-item-subheader">SAE Aero Design USA</li>
