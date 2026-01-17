@@ -17,7 +17,7 @@ export default function Competition2024Brazil() {
             <div className="content-image">
               <div className="competition-image-gallery">
                 <div className="gallery-item">
-                  <Image src="/images/Brasil Image.JPG" alt="2024 Brazil Competition" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
+                  <Image src="/images/Brasil Image.JPG" alt="" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
                 </div>
               </div>
             </div>

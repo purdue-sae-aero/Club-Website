@@ -149,6 +149,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-left: 10px;
 }
 
 .nav-link {
@@ -244,18 +245,21 @@ body {
     border-radius: 15px;
     border: 2px solid #d9aa08;
     z-index: 1000;
-    margin-top: 15px;
+    margin-top: 5px;
     padding: 15px 0;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    pointer-events: none;
 }
 
-.nav-dropdown:hover .dropdown-content {
+.nav-dropdown:hover .dropdown-content,
+.dropdown-content:hover {
     display: block;
     opacity: 1;
     visibility: visible;
-    margin-top: 10px;
+    margin-top: 5px;
+    pointer-events: auto;
 }
 
 .dropdown-section {

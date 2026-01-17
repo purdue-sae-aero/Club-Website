@@ -17,7 +17,7 @@ export default function Competition2024US() {
             <div className="content-image">
               <div className="competition-image-gallery">
                 <div className="gallery-item">
-                  <Image src="/images/other/IMG_6959.jpg" alt="2024 US Competition" width={400} height={300} />
+                  <Image src="/images/other/IMG_6959.jpg" alt="" width={400} height={300} style={{ width: '100%', height: 'auto' }} />
                 </div>
               </div>
             </div>
