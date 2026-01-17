@@ -74,8 +74,8 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="hero-image">
           <Image
-            src="/images/other/Gemini_Generated_Image_3ehzfx3ehzfx3ehz.png"
-            alt="Space Shuttle Hypersonic"
+            src="/images/other/Group_pic.jpg"
+            alt="Purdue SAE Aero Team"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -91,33 +91,18 @@ export default function Home() {
       </section>
 
       {/* Mission Section */}
-      <section id="mission" className="content-section" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
-          <Image
-            src="/images/other/IMG_6959.jpg"
-            alt="Mission Background"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-        </div>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.5)', zIndex: 0 }}></div>
+      <section id="mission" className="content-section" style={{ position: 'relative', overflow: 'hidden', background: '#FFFFFF', padding: '80px 0' }}>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <h2 style={{ display: 'inline-block', fontSize: '3rem', padding: '20px 60px', border: '3px solid #CFB53B', borderRadius: '50px', background: 'rgba(255, 255, 255, 0.75)', backdropFilter: 'blur(10px)' }}>Our Mission</h2>
+            <h2 style={{ display: 'inline-block', fontSize: '3rem', padding: '20px 60px', border: '3px solid #d9aa08', borderRadius: '50px', background: 'rgba(217, 170, 8, 0.1)' }}>Our Mission</h2>
           </div>
-          <div className="content-text" style={{ background: 'rgba(255, 255, 255, 0.7)', padding: '30px', borderRadius: '15px', backdropFilter: 'blur(10px)' }}>
-            <p>Purdue SAE Aero is dedicated to advancing aerospace engineering through innovative design, hands-on experience, and competitive excellence. Our team focuses on developing cutting-edge aircraft solutions that push the boundaries of what&apos;s possible in aerospace technology.</p>
-
-            <p>We participate in the SAE Aero Design competitions, where students design, build, and fly remote-controlled aircraft to compete in various challenges. This provides our members with invaluable real-world engineering experience.</p>
-
-            <h3>Our Goals</h3>
-            <ul className="benefits-list">
-              <li>Design and build competitive aircraft for SAE competitions</li>
-              <li>Provide hands-on engineering experience to students</li>
-              <li>Foster collaboration between different engineering disciplines</li>
-              <li>Promote aerospace education and innovation at Purdue</li>
-              <li>Develop the next generation of aerospace engineers</li>
-            </ul>
+          <div className="content-text" style={{ maxWidth: '900px', margin: '0 auto', padding: '30px', textAlign: 'center' }}>
+            <p style={{ fontSize: '1.3rem', lineHeight: 1.8, marginBottom: '30px' }}>
+              Purdue SAE Aero is a <strong>competitive aircraft design team</strong> that develops, builds, and flies aircraft against other universities from across the nation and around the globe.
+            </p>
+            <p style={{ fontSize: '1.3rem', lineHeight: 1.8, marginBottom: '30px' }}>
+              Our mission is to <strong>train undergraduate engineers</strong> to utilize aircraft design methodology and tools and <strong>inspire passion</strong> within them to develop high-performing aircraft.
+            </p>
           </div>
         </div>
       </section>
@@ -136,7 +121,7 @@ export default function Home() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           {/* Main Title */}
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 style={{ display: 'inline-block', fontSize: '2.5rem', color: '#000000', padding: '20px 60px', border: '3px solid #CFB53B', borderRadius: '50px', background: 'rgba(255, 255, 255, 0.75)', backdropFilter: 'blur(10px)' }}>Competitions</h2>
+            <h2 style={{ display: 'inline-block', fontSize: '2.5rem', color: '#020202', padding: '20px 60px', border: '3px solid #d9aa08', borderRadius: '50px', background: 'rgba(255, 255, 255, 0.75)', backdropFilter: 'blur(10px)' }}>Competitions</h2>
           </div>
 
           {/* Upcoming Competitions Subsection */}
@@ -187,7 +172,7 @@ export default function Home() {
               {/* Competition Archive Button */}
               <div style={{ textAlign: 'center', marginTop: '40px' }}>
                 <Link href="/competition-archive" style={{ textDecoration: 'none' }}>
-                  <button className="cta-button" style={{ background: '#FFFFFF', color: '#000000', border: '2px solid #CFB53B' }}>
+                  <button className="cta-button" style={{ background: '#FFFFFF', color: '#020202', border: '2px solid #d9aa08' }}>
                     View Competition Archive
                   </button>
                 </Link>
@@ -197,96 +182,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick Links Bar */}
-      <section className="quick-links-bar" style={{ background: 'linear-gradient(135deg, #000000 0%, #1a1a1a 100%)', padding: '60px 0' }}>
+      {/* Sponsorship Section */}
+      <section className="sponsors-home-section">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-            <h2 style={{ color: '#CFB53B', fontSize: '2rem', marginBottom: '15px' }}>Learn More About Our Team</h2>
-            <p style={{ color: '#FFFFFF', fontSize: '1.1rem' }}>Discover who supports us and who leads us to success</p>
-          </div>
-          <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '40px' }}>
-            <Link href="/sponsors" style={{ textDecoration: 'none' }}>
-              <button className="quick-links-btn">
-                View Our Sponsors
-              </button>
-            </Link>
-            <Link href="/leadership" style={{ textDecoration: 'none' }}>
-              <button className="quick-links-btn-outline">
-                Meet Our Leadership
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="contact-section" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
-          <Image
-            src="/images/other/image.jpg"
-            alt="Contact Background"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-        </div>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.5)', zIndex: 0 }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-            <h2 style={{ display: 'inline-block', fontSize: '2.5rem', color: '#000000', padding: '20px 60px', border: '3px solid #CFB53B', borderRadius: '50px', background: '#FFFFFF' }}>Contact Us</h2>
-          </div>
-          <div className="contact-grid">
-            <div className="contact-info" style={{ background: 'rgba(255, 255, 255, 0.9)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)' }}>
-              <h3 style={{ color: '#000000', fontSize: '2rem', marginBottom: '20px' }}>Get in Touch</h3>
-              <p style={{ color: '#333333', fontSize: '1.1rem', lineHeight: 1.8 }}>Whether you&apos;re interested in joining our team, exploring sponsorship opportunities, or have questions about our projects, we&apos;d love to hear from you!</p>
-
-              <div className="contact-item" style={{ background: 'rgba(207, 181, 59, 0.1)', padding: '20px', borderRadius: '15px', margin: '25px 0', borderLeft: '4px solid #CFB53B' }}>
-                <div className="contact-icon">📧</div>
-                <div className="contact-details">
-                  <h3 style={{ color: '#000000' }}>Email</h3>
-                  <p style={{ color: '#333333' }}>sae-aero@purdue.edu</p>
-                </div>
-              </div>
-
-              <div className="contact-item" style={{ background: 'rgba(207, 181, 59, 0.1)', padding: '20px', borderRadius: '15px', margin: '25px 0', borderLeft: '4px solid #CFB53B' }}>
-                <div className="contact-icon">📍</div>
-                <div className="contact-details">
-                  <h3 style={{ color: '#000000' }}>Location</h3>
-                  <p style={{ color: '#333333' }}>Purdue University<br />West Lafayette, IN 47907</p>
-                </div>
-              </div>
-
-              <div className="social-links" style={{ marginTop: '30px' }}>
-                <h3 style={{ color: '#000000', fontSize: '1.5rem', marginBottom: '15px' }}>Follow Us</h3>
-                <div className="social-icons">
-                  <a href="https://www.instagram.com/purduesaeaero/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ background: 'linear-gradient(135deg, #CFB53B, #FFA500)', color: '#000000', padding: '12px 24px', borderRadius: '25px', textDecoration: 'none', display: 'inline-block', margin: '5px', fontWeight: 600, transition: 'transform 0.3s' }}>📷 Instagram</a>
-                  <a href="https://www.linkedin.com/company/purdue-sae-aero-design/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ background: 'linear-gradient(135deg, #CFB53B, #FFA500)', color: '#000000', padding: '12px 24px', borderRadius: '25px', textDecoration: 'none', display: 'inline-block', margin: '5px', fontWeight: 600, transition: 'transform 0.3s' }}>💼 LinkedIn</a>
-                </div>
+          <div className="sponsors-home-content">
+            <div className="sponsors-home-text">
+              <h2>Interested In Supporting Us?</h2>
+              <p>Learn more about how you can partner with us in our sponsorship information packet.</p>
+              <div style={{ display: 'flex', gap: '20px', marginTop: '30px', flexWrap: 'wrap' }}>
+                <Link href="/about#sponsors" style={{ textDecoration: 'none' }}>
+                  <button className="cta-button" style={{ background: '#d9aa08', color: '#020202' }}>
+                    Learn More
+                  </button>
+                </Link>
+                <Link href="/about#contact" style={{ textDecoration: 'none' }}>
+                  <button className="cta-button" style={{ background: 'transparent', border: '2px solid #d9aa08', color: '#d9aa08' }}>
+                    Get in Touch
+                  </button>
+                </Link>
+                <Link href="/donate" style={{ textDecoration: 'none' }}>
+                  <button className="cta-button" style={{ background: '#0066cc', color: '#FFFFFF' }}>
+                    Donate
+                  </button>
+                </Link>
               </div>
             </div>
-
-            <div className="contact-form" style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '40px', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)' }}>
-              <h3 style={{ color: '#000000', fontSize: '2rem', marginBottom: '25px' }}>Send us a Message</h3>
-              <form className="message-form" onSubmit={(e) => {
-                e.preventDefault();
-                alert('Form submission functionality coming soon!');
-              }}>
-                <div className="form-group">
-                  <label htmlFor="name" style={{ color: '#000000', fontWeight: 600, fontSize: '1.1rem' }}>Name</label>
-                  <input type="text" id="name" name="name" required style={{ width: '100%', padding: '15px', border: '2px solid #CFB53B', borderRadius: '10px', fontSize: '1rem', marginTop: '8px', transition: 'border-color 0.3s', background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(5px)' }} />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="email" style={{ color: '#000000', fontWeight: 600, fontSize: '1.1rem' }}>Email</label>
-                  <input type="email" id="email" name="email" required style={{ width: '100%', padding: '15px', border: '2px solid #CFB53B', borderRadius: '10px', fontSize: '1rem', marginTop: '8px', transition: 'border-color 0.3s', background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(5px)' }} />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="message" style={{ color: '#000000', fontWeight: 600, fontSize: '1.1rem' }}>Message</label>
-                  <textarea id="message" name="message" rows={5} required style={{ width: '100%', padding: '15px', border: '2px solid #CFB53B', borderRadius: '10px', fontSize: '1rem', marginTop: '8px', transition: 'border-color 0.3s', resize: 'vertical', background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(5px)' }}></textarea>
-                </div>
-
-                <button type="submit" className="submit-btn" style={{ width: '100%', background: 'linear-gradient(135deg, #CFB53B, #FFA500)', color: '#000000', padding: '18px', border: 'none', borderRadius: '30px', fontSize: '1.2rem', fontWeight: 700, cursor: 'pointer', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 5px 20px rgba(207, 181, 59, 0.4)' }}>Send Message</button>
-              </form>
+            <div className="sponsors-home-images">
+              <div className="sponsor-image-item">
+                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 1</p>
+              </div>
+              <div className="sponsor-image-item">
+                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 2</p>
+              </div>
+              <div className="sponsor-image-item">
+                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 3</p>
+              </div>
+              <div className="sponsor-image-item">
+                <p style={{ color: '#020202', fontWeight: 'bold', fontSize: '1.1rem' }}>Sponsor Logo 4</p>
+              </div>
             </div>
           </div>
         </div>
