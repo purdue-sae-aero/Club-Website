@@ -65,8 +65,8 @@ export default function Home() {
     const W_n = Number(cgInputs.wN);
     const W_ml = Number(cgInputs.wMl);
     const W_mr = Number(cgInputs.wMr);
-    const x_n = cgInputs.xN.trim() === '' ? 0.6 : Number(cgInputs.xN);
-    const x_m = cgInputs.xM.trim() === '' ? 1.047 : Number(cgInputs.xM);
+    const x_n = cgInputs.xN.trim() === '' ? 0.502 : Number(cgInputs.xN);
+    const x_m = cgInputs.xM.trim() === '' ? 1.032 : Number(cgInputs.xM);
     const x_np = cgInputs.xNp.trim() === '' ? 1.15 : Number(cgInputs.xNp);
 
     if ([W_n, W_ml, W_mr, x_n, x_m, x_np].some((value) => Number.isNaN(value))) {

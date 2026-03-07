@@ -10,13 +10,13 @@ def calculate_cg():
         # 2. Gather Distance Inputs (Longitudinal from nose)
         x_nput = float(input("Enter distance from nose tip to Nose Gear (m) [Press Enter for default 0.6]: "))
         if x_nput.strip() == "":
-            x_n = 0.6  # Default value
+            x_n = 0.737 - 0.235  # Default value
         else:
             x_n = float(np_input)
 
         x_mput = float(input("Enter distance from nose tip to Main Gears (m) [Press Enter for default 1.047]: "))
         if x_mput.strip() == "":
-            x_m = 1.047  # Default value
+            x_m = 1.032  # Default value
         else:
             x_m = float(np_input)
 
