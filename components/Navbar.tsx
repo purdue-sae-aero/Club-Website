@@ -59,11 +59,13 @@ export default function Navbar() {
                 <div className="dropdown-header">SAE Aero Design USA</div>
                 <Link href="/competition-2024-us" className="dropdown-link">2024 East Micro</Link>
                 <Link href="/competition-2025-us" className="dropdown-link">2025 East Regular</Link>
+                <Link href="/competition-2026-us" className="dropdown-link">2026 East Regular</Link>
               </div>
             </div>
           </div>
 
           <Link href="/about" className="nav-link">About Us</Link>
+          <Link href="/member-resources" className="nav-link">Member Resources</Link>
           <Link href="/donate" className={`donate-btn ${isScrolled && !isExpanded ? 'donate-btn-small' : ''}`}>Donate</Link>
         </div>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
@@ -99,6 +101,7 @@ export default function Navbar() {
           <li className="nav-item nav-item-sub"><Link href="/competition-2024-us" className="nav-link">2024 East Micro</Link></li>
           <li className="nav-item nav-item-sub"><Link href="/competition-2025-us" className="nav-link">2025 East Regular</Link></li>
           <li className="nav-item"><Link href="/about" className="nav-link">About Us</Link></li>
+          <li className="nav-item"><Link href="/member-resources" className="nav-link">Member Resources</Link></li>
           <li className="nav-item"><Link href="/donate" className="nav-link">Donate</Link></li>
           <li className="nav-item">
             <a 

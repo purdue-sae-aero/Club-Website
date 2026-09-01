@@ -27,6 +27,15 @@ export default function CompetitionArchive() {
 
   const competitions = [
     {
+      year: '2026',
+      title: '2026 East - Regular Class',
+      location: 'Lakeland, Florida',
+      division: 'Regular Class',
+      description: 'Competed in Lakeland in the Regular Class division with lessons in competition role management.',
+      image: '/images/team_image.jpg',
+      link: '/competition-2026-us'
+    },
+    {
       year: '2025',
       title: '2025 East - Regular Class',
       location: 'Fort Worth, Texas',
@@ -57,10 +66,15 @@ export default function CompetitionArchive() {
 
   const journeyItems = [
     {
+      year: '2027',
+      title: '2027 East - Regular Class',
+      location: 'TBD',
+      upcoming: true
+    },
+    {
       year: '2026',
       title: '2026 East - Regular Class',
       location: 'Lakeland, Florida',
-      upcoming: true
     },
     {
       year: '2025',

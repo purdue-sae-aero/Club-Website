@@ -14,7 +14,6 @@ export default function Competition2025US() {
     <main className="page-content">
       <div className="page-header">
         <h1 className="page-title">2025 US Competition</h1>
-        <p className="page-subtitle">Our Latest Competition Excellence</p>
       </div>
 
       <section className="content-section competition-page-section">

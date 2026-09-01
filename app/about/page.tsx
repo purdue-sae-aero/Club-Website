@@ -51,11 +51,11 @@ export default function About() {
               <div className="leader-info">
                 <h3>AJ Woods</h3>
                 <p className="leader-title">President</p>
-                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
+                <p className="leader-major">Mechanical Engineering</p>
               </div>
             </div>
 
-            {/* William Shorey - Ex-President and Co-Founder */}
+            {/* William Shorey - Vice President and Co-Founder */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
@@ -67,114 +67,114 @@ export default function About() {
               </div>
               <div className="leader-info">
                 <h3>William Shorey</h3>
-                <p className="leader-title">Ex-President & Co-Founder</p>
+                <p className="leader-title">Vice President & Co-Founder</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Matthew Leight - Ex-President and Co-Founder */}
+            {/* Rafi Razmi - Treasurer */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
-                  src="/images/About Us section/Leight, Matthew.jpg"
-                  alt="Matthew Leight"
+                  src="/images/About Us section/Razmi, Rafi - Linkedin Stolen.jpg"
+                  alt="Rafi Razmi"
                   width={150}
                   height={150}
                 />
               </div>
               <div className="leader-info">
-                <h3>Matthew Leight</h3>
-                <p className="leader-title">Founder & Advisory Guy</p>
+                <h3>Rafi Razmi</h3>
+                <p className="leader-title">Treasurer</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Nicholas Rose - Treasurer and Co-Founder */}
+            {/* Leah Sanitato - Structures Lead */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
-                  src="/images/About Us section/Rose, Will.jpg"
-                  alt="Nicholas Rose"
+                  src="/images/About Us section/Sanitato, Leah - Linkedin Stolen.jpg"
+                  alt="Leah Sanitato"
                   width={150}
                   height={150}
                 />
               </div>
               <div className="leader-info">
-                <h3>Nicholas Rose</h3>
-                <p className="leader-title">Treasurer & Co-Founder</p>
+                <h3>Leah Sanitato</h3>
+                <p className="leader-title">Structures Lead</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Aaryan Lath - Chief Engineer */}
+            {/* Yuta Tsuboi - Mechanisms and Propulsion Lead */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
-                  src="/images/About Us section/Lath, Aaryan.jpg"
-                  alt="Aaryan Lath"
+                  src="/images/About Us section/Tsuboi, Yuta - Linkedin Stolen.jpg"
+                  alt="Yuta Tsuboi"
                   width={150}
                   height={150}
                 />
               </div>
               <div className="leader-info">
-                <h3>Aaryan Lath</h3>
-                <p className="leader-title">Chief Engineer</p>
+                <h3>Yuta Tsuboi</h3>
+                <p className="leader-title">Mechanisms and Propulsion Lead</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Leticia Santos - Systems and Integration Lead */}
+            {/* Jacob Sheridan - Mechanisms and Propulsion Lead */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
-                  src="/images/About Us section/Santos, Leticia.png"
-                  alt="Leticia Santos"
+                  src="/images/About Us section/Sheridan, Jacob.jpg"
+                  alt="Jacob Sheridan"
                   width={150}
                   height={150}
                 />
               </div>
               <div className="leader-info">
-                <h3>Leticia Santos</h3>
-                <p className="leader-title">Systems & Integration Lead</p>
+                <h3>Jacob Sheridan</h3>
+                <p className="leader-title">Mechanisms and Propulsion Lead</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Almos Quevedo - Aerodynamics Lead */}
+            {/* Luke Wu - Advanced Class Lead */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
-                  src="/images/About Us section/Quevedo, Almos.jpg"
-                  alt="Almos Quevedo"
+                  src="/images/About Us section/Wu, Luke.png"
+                  alt="Luke Wu"
                   width={150}
                   height={150}
                 />
               </div>
               <div className="leader-info">
-                <h3>Almos Quevedo</h3>
+                <h3>Luke Wu</h3>
+                <p className="leader-title">Advanced Class Lead</p>
+                <p className="leader-major">Aeronautical and Astronautical Engineering</p>
+              </div>
+            </div>
+
+            {/* Sydney Wilson - Aerodynamics Lead */}
+            <div className="leader-card">
+              <div className="leader-image">
+                <Image
+                  src="/images/About Us section/Wilson, Sydney - Linkedin Stolen.jpg"
+                  alt="Sydney Wilson"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="leader-info">
+                <h3>Sydney Wilson</h3>
                 <p className="leader-title">Aerodynamics Lead</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
 
-            {/* Max Palmer - Structures Lead */}
-            <div className="leader-card">
-              <div className="leader-image">
-                <Image
-                  src="/images/About Us section/Palmer, Max.jpg"
-                  alt="Max Palmer"
-                  width={150}
-                  height={150}
-                />
-              </div>
-              <div className="leader-info">
-                <h3>Max Palmer</h3>
-                <p className="leader-title">Structures Lead</p>
-                <p className="leader-major">Mechanical Engineering</p>
-              </div>
-            </div>
-
-            {/* Adam Zhu - Principal Aerodynamics Engineer */}
+            {/* Adam Zhu - Aerodynamics Lead */}
             <div className="leader-card">
               <div className="leader-image">
                 <Image
@@ -186,7 +186,7 @@ export default function About() {
               </div>
               <div className="leader-info">
                 <h3>Adam Zhu</h3>
-                <p className="leader-title">Principal Aerodynamics Engineer</p>
+                <p className="leader-title">Aerodynamics Lead</p>
                 <p className="leader-major">Aeronautical and Astronautical Engineering</p>
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function About() {
                   <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#020202', margin: 0 }}>GROUND CREW</h3>
                   <span style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#020202' }}>$100-$1,499</span>
                 </div>
-                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#1a1a1a', fontSize: '1.1rem', lineHeight: 2 }}>
+                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#1a1a1a', fontSize: '1.1rem', lineHeight: 2, textAlign: 'left' }}>
                   <li>Logo in marketing materials</li>
                   <li>Team update newsletters</li>
                 </ul>
@@ -262,7 +262,7 @@ export default function About() {
                   <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#020202', margin: 0 }}>TAKEOFF</h3>
                   <span style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#020202' }}>$1,500-$4,499</span>
                 </div>
-                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#020202', fontSize: '1.1rem', lineHeight: 2 }}>
+                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#020202', fontSize: '1.1rem', lineHeight: 2, textAlign: 'left' }}>
                   <li>All previous rewards</li>
                   <li>Logo on team jersey sleeves</li>
                   <li>Invitation to major team events</li>
@@ -276,7 +276,7 @@ export default function About() {
                   <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#020202', margin: 0 }}>CRUISE</h3>
                   <span style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#020202' }}>$4,500+</span>
                 </div>
-                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#1a1a1a', fontSize: '1.1rem', lineHeight: 2 }}>
+                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#1a1a1a', fontSize: '1.1rem', lineHeight: 2, textAlign: 'left' }}>
                   <li>All previous rewards</li>
                   <li>Logo on all competition aircraft and team jersey (front/back)</li>
                   <li>PSAEA will host a semesterly networking session</li>
@@ -293,7 +293,7 @@ export default function About() {
               >
                 Contact Us About Sponsorship
               </a>
-              <a href="/PSAEA Sponsor Information Packet.pdf" target="_blank" className="sponsor-info-btn" style={{ display: 'inline-block' }}>
+              <a href="/FA26 PSAE Aero Information Packet.pdf" target="_blank" className="sponsor-info-btn" style={{ display: 'inline-block' }}>
                 Download Sponsorship Information Packet
               </a>
             </div>
